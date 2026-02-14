@@ -31,5 +31,5 @@ jobs:
             exit 0
           fi
 
-          brew tap --overwrite jaumecornado/tap "$GITHUB_WORKSPACE"
+          brew tap --custom-remote jaumecornado/tap "$GITHUB_WORKSPACE"
           brew audit --strict --tap=jaumecornado/tap
