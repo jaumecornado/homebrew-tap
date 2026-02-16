@@ -5,20 +5,20 @@
 class Holded < Formula
   desc "CLI tool for Holded API"
   homepage "https://github.com/jaumecornado/holdedcli"
-  version "0.3.5"
+  version "0.3.6"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/jaumecornado/holdedcli/releases/download/v0.3.5/holdedcli_0.3.5_darwin_amd64.tar.gz"
-    sha256 "46fd8e60a3dd9b3e21189e77dce6b6e7e4e5c8717c3afe4d3d9d6ad8d82e3069"
+    url "https://github.com/jaumecornado/holdedcli/releases/download/v0.3.6/holdedcli_0.3.6_darwin_amd64.tar.gz"
+    sha256 "3cdc0fa1ac68f5162fee49fb6d8f084d46f6e9d334a58e24b157864a95026487"
 
     def install
       bin.install "holded"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/jaumecornado/holdedcli/releases/download/v0.3.5/holdedcli_0.3.5_darwin_arm64.tar.gz"
-    sha256 "82cf6d5accb20fddb512231b09bb48b9fbc257159ec8e39f4ec0dba0f1ba877b"
+    url "https://github.com/jaumecornado/holdedcli/releases/download/v0.3.6/holdedcli_0.3.6_darwin_arm64.tar.gz"
+    sha256 "ee04be73d974be8b27c3e7ff2186bd27d44cdb29964940404d8154303495151c"
 
     def install
       bin.install "holded"
